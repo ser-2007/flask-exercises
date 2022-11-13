@@ -18,7 +18,7 @@ def iletisim():
     return render_template('iletisim.html', object=telno)
 @app.route('/hata')
 def hata():
-    return '<h1> Aradiginiz sayfa bulunamamaktadir</h1>'
+    return '<h1> The page you looked is not be reached at this time</h1>'
 
 if __name__ == ("__main__"):
     app.run(debug=True)
