@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def aws():
-    return '<h1>Clarusway AWS</>'
+    return '<h1> AWS</>'
 
 @app.route('/index')
 def index():
@@ -14,7 +14,7 @@ def index():
 
 @app.route('/iletisim')
 def iletisim():
-    telno = ["Ankara = 031245554478", "Istanbul = 0212545878559"]
+    telno = ["Ankara = 031245554478", "Istanbul = 0212545878559", "Helsinki = 0405977344"]
     return render_template('iletisim.html', object=telno)
 @app.route('/hata')
 def hata():
